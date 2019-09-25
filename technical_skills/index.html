@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script src="repo-fetching.js"></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<script>showData()</script>
+		
+		<div style="padding: 30px;margin:0 auto;">
+			<ul style="display: table; margin-left: 50px">
+				<li><a href="../">Home</a></li>
+				<li><a href="./about/">About</a></li>
+				<li><a href="../technical_skills/"  class="active">Technical Skills</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+
+		<div id="completed-projects" style="width: 1100px; margin: 0 auto;">
+			<h1 style="text-align: center;">My Projects</h1>
+			<table id="projects">
+				<tr>
+					<th>Project Title</th>
+					<th style="width: 100px;">Date Created</th>
+					<th>Project Description</th>
+				</tr>
+			</table>
+		</div>
+
+		<div class="languages" style="margin:0 auto;width:1100px;">
+			<h1 style="text-align: center;">Languages</h1>
+			<table>
+				<tr>
+					<th style="padding: 0 50px;">Language</th>
+					<th>Experience</th>
+					<th>Applications</th>
+				</tr>
+				<tr>
+					<td id="lang">C++</td>
+					<td id="exp">Intermediate</td>
+					<td>
+						<ul>
+							<li>- Learned programming fundaments (loops, working with static and dynamic arrays, modular programming, object-oriented design, sorting algorithms, etc.)</li>
+							<li>- Implemented basic data structures (queues, priority queues, hash tables, linked-lists, and AVL binary search trees)</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td id="lang">Python</td>
+					<td id="exp">Novice</td>
+					<td>
+						<ul>
+							<li>- Developed a basic socket application (client and server-side) that sends a lowercase string to a port and returns the string but capitalized</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td id="lang">Assembly</td>
+					<td id="exp">Novice</td>
+					<td>
+						<ul>
+							<li>- Writing software to interface with a microcontroller (specifically the TM4C123GH6PM microcontroller)</li>
+							<li>- Created programs such as a basic 4-function integer calculator, a basic clock with asynchronus interrupts, and interfacing with a keyboard via the built-in Universal Asynchronus Receiver, Transmitter (UART)</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td id="lang">Verilog</td>
+					<td id="exp">Novice</td>
+					<td>
+						<ul>
+							<li>- Wrote software to interface with logic IC development board</li>
+							<li>- Developed programs such as an asynchronus up-down counter with reset and preset capabilities using T FlipFlops</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td id="lang">MATLAB</td>
+					<td id="exp">Novice</td>
+					<td>
+						<ul>
+							<li>- Wrote scripts to analyze and output data</li>
+							<li>- Analyzed circuits in order to understand the natural response of non-linear circuits</li>
+							<li>- Utilized the symbolic toolbox to find the natural frequency response of a circuit, creating Bode plots, and finding transfer functions</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
+
+<style>
+	li {
+		display: inline-block;
+		margin: 10px 30px;
+	}
+
+	a {
+		font-family: courier, courier new, serif;
+		text-decoration: none;
+		color: black;
+		font-size: 16px;
+	}
+
+	.active {
+		text-decoration: underline;
+	}
+
+	#lang {
+		font-weight: bold;
+		text-align: center
+	}
+	#exp {
+		font-style: italic;
+		text-align: center;
+	}
+
+	table {
+		border-collapse: collapse;
+		border: 1px solid black;
+	}
+
+	th, td {
+		border-bottom: 1px solid black;
+	}
+	
+	td {
+      padding: 10px 10px;
+   }
+
+	th {
+		padding: 10px 10px;
+	}
+</style>
