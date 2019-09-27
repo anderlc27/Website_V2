@@ -5,35 +5,38 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<script src="repo-fetching.js"></script>
-		<title>Document</title>
+		<title>Loren Anderson | Official Website</title>
 	</head>
 	<body>
 		<script>showData()</script>
-		
-		<div style="padding: 30px;margin:0 auto;">
-			<ul style="display: table; margin-left: 50px">
-				<li><a href="../">Home</a></li>
-				<li><a href="./about/">About</a></li>
-				<li><a href="../technical_skills/"  class="active">Technical Skills</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
+		<div>
+			<div style="padding: 30px 30px 0px;margin:0 auto; background-color: white;">
+				<ul style="display: table; margin-left: 50px;">
+					<li style="margin: 10px 30px;"><a href="../">Home</a></li>
+					<li style="margin: 10px 30px;"><a href="../about/">About</a></li>
+					<li style="margin: 10px 30px;"><a href="../technical_skills/"  class="active">Technical Skills</a></li>
+					<li style="margin: 10px 30px;"><a href="#">Contact</a></li>
+				</ul>
+			</div>
 		</div>
 
 		<div id="completed-projects" style="width: 1100px; margin: 0 auto;">
 			<h1 style="text-align: center;">My Projects</h1>
+			<p style="text-align: center; margin-top: -10px;">(click project name for GitHub link)</p>
 			<table id="projects">
-				<tr>
-					<th>Project Title</th>
+				<tr style="background-color: lightgrey;">
+					<th>Project Name</th>
 					<th style="width: 100px;">Date Created</th>
+					<th>Language</th>
 					<th>Project Description</th>
 				</tr>
 			</table>
 		</div>
 
 		<div class="languages" style="margin:0 auto;width:1100px;">
-			<h1 style="text-align: center;">Languages</h1>
+			<h1 style="text-align: center;">Programming/Scripting Languages</h1>
 			<table>
-				<tr>
+				<tr style="background-color: lightgrey;">
 					<th style="padding: 0 50px;">Language</th>
 					<th>Experience</th>
 					<th>Applications</th>
@@ -63,7 +66,7 @@
 					<td>
 						<ul>
 							<li>- Writing software to interface with a microcontroller (specifically the TM4C123GH6PM microcontroller)</li>
-							<li>- Created programs such as a basic 4-function integer calculator, a basic clock with asynchronus interrupts, and interfacing with a keyboard via the built-in Universal Asynchronus Receiver, Transmitter (UART)</li>
+							<li>- Created programs such as a basic 4-function integer calculator, a basic clock with asynchronus interrupts, and interfacing with a keyboard via the built-in Universal Asynchronus Receiver-Transmitter (UART)</li>
 						</ul>
 					</td>
 				</tr>
@@ -83,12 +86,20 @@
 					<td>
 						<ul>
 							<li>- Wrote scripts to analyze and output data</li>
+							<li></li>
 							<li>- Analyzed circuits in order to understand the natural response of non-linear circuits</li>
+							<li></li>
 							<li>- Utilized the symbolic toolbox to find the natural frequency response of a circuit, creating Bode plots, and finding transfer functions</li>
 						</ul>
 					</td>
 				</tr>
 			</table>
+		</div>
+		<div style="margin: 0 auto; height: 100px; width: 300px;">
+			<ul>
+				<li style="margin: 10px 30px;"><a href="https://github.com/anderlc27"><img src="../github_logo.png" width="40px;"></a></li>
+				<li style="margin: 10px 30px;"><a href="https://www.linkedin.com/in/lorencanderson/n"><img src="../linkedin.png" width="40px;"></a></li>
+			</ul>
 		</div>
 	</body>
 </html>
@@ -96,7 +107,6 @@
 <style>
 	li {
 		display: inline-block;
-		margin: 10px 30px;
 	}
 
 	a {
@@ -112,7 +122,7 @@
 
 	#lang {
 		font-weight: bold;
-		text-align: center
+		text-align: center;
 	}
 	#exp {
 		font-style: italic;
@@ -125,6 +135,7 @@
 	}
 
 	th, td {
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 		border-bottom: 1px solid black;
 	}
 	
